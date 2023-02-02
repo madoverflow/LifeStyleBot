@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'org.lifestylebot'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'org.telegram:telegrambots:6.4.0'
+    implementation 'org.telegram:telegrambotsextensions:6.4.0'
+    implementation 'org.telegram:telegrambots-abilities:6.4.0'
+    implementation 'org.slf4j:slf4j-log4j12:2.0.6'
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
+    implementation 'com.vdurmont:emoji-java:5.1.1'
+}
+
+test {
+    useJUnitPlatform()
+}
