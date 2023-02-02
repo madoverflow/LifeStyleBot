@@ -8,7 +8,7 @@ This bot was built to help you keep simple and healthy your life style. It's alw
 ## Features 🧠
 
 - ### Water reminder: 
-  Drink water is the most important thing of our life. So you can set a water reminder with a 10m, 20m, 30m, 45, 1h, 2h frequency.
+  Drink water is the most important thing of our life. So you can set a water reminder with a 10m, 20m, 30m, 45m, 1h, 2h frequency.
 - ### Night mode: 
   Night mode is only avaiable in groups. It starts at midnight and it ends at 7 am every day. During night mode, the group members aren't allowed to send messages on group.
 
@@ -32,15 +32,22 @@ This bot was built to help you keep simple and healthy your life style. It's alw
 ## Installation
 You must install the follow libraries to build this project:
 
-- jkhkj
-- jkhkj
-- jkhkjh
-- kjbjkj
+- Telegram bots
+- Telegram bots extensions
+- Telegram bots abilities
+- Slf4j
+- Http client
+- Emoji java
 
 You can choose different way to install them. If you use a gradle configuration:
 
 ```bash
-    gradle configuration
+    implementation 'org.telegram:telegrambots:6.4.0'
+    implementation 'org.telegram:telegrambotsextensions:6.4.0'
+    implementation 'org.telegram:telegrambots-abilities:6.4.0'
+    implementation 'org.slf4j:slf4j-log4j12:2.0.6'
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
+    implementation 'com.vdurmont:emoji-java:5.1.1'
 ```
 
 ## License
@@ -60,11 +67,9 @@ You can choose different way to install them. If you use a gradle configuration:
 
 ## Documentation
 
-[Api discord reference](https://discordpy.readthedocs.io/)
-
-[Api py-cord reference](https://docs.pycord.dev/)
+[Api Telegram for Java](https://github.com/rubenlagus/TelegramBots)
  
-[Mysql reference](https://dev.mysql.com/doc/connector-python/en/connector-python-reference.html)
+[Api Emoji for Java](https://github.com/vdurmont/emoji-java)
 
 Javadoc isn't available for this project
 
